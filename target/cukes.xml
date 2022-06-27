@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="18" time="169.427">
+<testcase classname="F01_register | User could register with valid data" name="User should be able to register with valid username and password" time="13.369">
+<system-out><![CDATA[Given user go to register page..............................................passed
+When user enter a valid data................................................passed
+And user press on register button...........................................passed
+Then user register to the system successfully...............................passed
+And user logout.............................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="user could login with valid email and password" time="6.719">
+<system-out><![CDATA[Given user go to login page.................................................passed
+When user login with valid email and password...............................passed
+And user press on login button..............................................passed
+Then user login to the system successfully..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="User can use &quot;Follow us&quot; with &quot;facebook&quot;" time="9.863">
+<system-out><![CDATA[When click on follow us "facebook"..........................................passed
+Then "https://www.facebook.com/nopCommerce" opened successfully.............passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="User can use &quot;Follow us&quot; with &quot;twitter&quot;" time="13.122">
+<system-out><![CDATA[When click on follow us "twitter"...........................................passed
+Then "https://twitter.com/nopCommerce" opened successfully..................passed
+]]></system-out>
+</testcase>
+<testcase classname="F02_login | users could use login functionality to open their accounts" name="User can use &quot;Follow us&quot; with &quot;youtube&quot;" time="16.247">
+<system-out><![CDATA[When click on follow us "youtube"...........................................passed
+Then "https://www.youtube.com/user/nopCommerce" opened successfully.........passed
+]]></system-out>
+</testcase>
+<testcase classname="F03_resetPassword |User could reset his/her password successfully" name="Success message appear after user reset his/her password" time="7.37">
+<system-out><![CDATA[Given user go to account page...............................................passed
+And user choose change password.............................................passed
+When user enter new password................................................passed
+And user press on change password button....................................passed
+Then user changed password successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User could search for any product" name="user could search using SKU" time="8.085">
+<system-out><![CDATA[Given user clicks on search field...........................................passed
+When user search with SKU of product........................................passed
+Then user could find results is true........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User could search for any product" name="user could search for product using full name" time="5.654">
+<system-out><![CDATA[When user clicks on search field............................................passed
+And user search with name of product........................................passed
+Then user could find relative results.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F04_search | Logged User could search for any product" name="user could makes advanced search" time="5.773">
+<system-out><![CDATA[Given user choose advanced search...........................................passed
+When user choose specific category..........................................passed
+Then user choose manufacturer...............................................passed
+And user click on search button.............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F05_addToWishlist | Logged user could add different products to Wishlist" name="add To Wishlist" time="6.625">
+<system-out><![CDATA[Given user could select a product...........................................passed
+When user can add product to Wishlist.......................................passed
+Then product added to Wishlist successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F06_filterWithColor | Logged user could filter with color" name="user filter products with specific color" time="5.984">
+<system-out><![CDATA[Given user go to category page..............................................passed
+When user select sub-category...............................................passed
+Then user filter products by color..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F07_selectCategories | Logged user could select different Categories" name="Select random category then hover and open sub-Category" time="5.673">
+<system-out><![CDATA[When user enter to category page............................................passed
+Then open sub-category......................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F08_switchCurrencies | Logged User could switch between currencies" name="User could switch between currencies US-Euro" time="5.497">
+<system-out><![CDATA[Given user click on currencies list.........................................passed
+When user change the currency...............................................passed
+Then currency changed successfully..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F09_selectTags | Logged user could select different tags" name="user could select tags" time="6.806">
+<system-out><![CDATA[Given user navigate to tags page............................................passed
+Then select random tags.....................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F10_AddToCompareList | Logged user could add different products to compare list" name="AddTo Compare List" time="6.841">
+<system-out><![CDATA[Given user select a product.................................................passed
+When user can add product to compare list...................................passed
+Then product added to compare list successfully.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_addToCart | Logged user could add different products to Shopping cart" name="user add products to cart" time="5.943">
+<system-out><![CDATA[Given user can select a product.............................................passed
+When user can add product to shipping cart..................................passed
+And product added to cart successfully......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="F11_addToCart | Logged user could add different products to Shopping cart" name="user edit shopping cart" time="6.931">
+<system-out><![CDATA[Given user open shopping cart...............................................passed
+When User can change product quantity in shipping cart......................passed
+Then User can delete product from shipping cart.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="F_12 Create successful Order" name="User can create order and it should be created successfully" time="18.294">
+<failure message="element not interactable&#10;  (Session info: chrome=102.0.5005.115)&#10;Build info: version: '4.2.2', revision: '683ccb65d6'&#10;System info: host: 'Khaleds-iMac.local', ip: 'fe80:0:0:0:9c:7f13:36e8:c606%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.6', java.version: '1.8.0_333'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [f694348129b9bfe05a1d6088886ae5e2, clickElement {id=110ae56f-fb39-4b65-a9a5-2fb5757eae83}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/1k/7tt6wtjx0s3...}, goog:chromeOptions: {debuggerAddress: localhost:59191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59191/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on MAC (f694348129b9bfe05a1d6088886ae5e2)] -&gt; xpath: //div/button[@class=&quot;button-1 payment-info-next-step-button&quot;] ]&#10;Session ID: f694348129b9bfe05a1d6088886ae5e2" type="org.openqa.selenium.ElementNotInteractableException"><![CDATA[Given go to shopping cart...................................................passed
+And accept the terms of service.............................................passed
+When click on check out button..............................................passed
+And Update address information..............................................passed
+Then confirm order..........................................................failed
+And order completed successfully............................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=102.0.5005.115)
+Build info: version: '4.2.2', revision: '683ccb65d6'
+System info: host: 'Khaleds-iMac.local', ip: 'fe80:0:0:0:9c:7f13:36e8:c606%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '11.6', java.version: '1.8.0_333'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f694348129b9bfe05a1d6088886ae5e2, clickElement {id=110ae56f-fb39-4b65-a9a5-2fb5757eae83}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 102.0.5005.115, chrome: {chromedriverVersion: 102.0.5005.61 (0e59bcc00cc4..., userDataDir: /var/folders/1k/7tt6wtjx0s3...}, goog:chromeOptions: {debuggerAddress: localhost:59191}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:59191/devtoo..., se:cdpVersion: 102.0.5005.115, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (f694348129b9bfe05a1d6088886ae5e2)] -> xpath: //div/button[@class="button-1 payment-info-next-step-button"] ]
+Session ID: f694348129b9bfe05a1d6088886ae5e2
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.automation.pages.Order.confirmOrder(Order.java:89)
+	at com.automation.step_definitions.CreateOrder.confirm_order(CreateOrder.java:45)
+	at ✽.confirm order(file:///Users/khaledzohdy/Downloads/Khaled-Zohdy-E-commerce-Automation-Project-9a11108/src/main/resources/features/F12_createSuccessfulOrder.feature:9)
+]]></failure>
+</testcase>
+</testsuite>
